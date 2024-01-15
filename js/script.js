@@ -1,3 +1,5 @@
+const target = document.querySelector('.row');
+
 //MILESTONE 0 creo il mio array
 const society = [
     /* troviamo il nome, la posizone occupata e immagine profilo di una determinata persona */
@@ -36,3 +38,23 @@ const society = [
 
 // MILESTONE 1 stampiamo in console
 console.log(society);
+
+// MILESTONE 2 stampare sul DOM
+// BONUS 2 stampa la foto relativa alla persona
+// BONUS 3 inserisci all'interno delle carte
+let messange ='';
+
+for(let i = 0 ; i < society.length; i++){
+    messange += `
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/${society[i].img}" class="card-img-top" alt="profile image ${society[i].name}">
+                <div class="card-body">
+                    <p class="card-text">${society[i].name}</p>
+                </div>
+            </div>
+        </div>
+    `
+}
+
+target.innerHTML = messange;
