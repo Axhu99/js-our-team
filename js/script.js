@@ -33,3 +33,6 @@ const society = [
     }
     
 ]
+
+// MILESTONE 1 stampiamo in console
+console.log(society);
