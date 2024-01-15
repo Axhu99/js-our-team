@@ -46,11 +46,12 @@ let messange ='';
 
 for(let i = 0 ; i < society.length; i++){
     messange += `
-        <div class="col">
-            <div class="card" style="width: 18rem;">
+        <div class="col-4 g-5 d-flex justify-content-center">
+            <div class="card border-0 text-center" style="width: 20rem;">
                 <img src="img/${society[i].img}" class="card-img-top" alt="profile image ${society[i].name}">
                 <div class="card-body">
-                    <p class="card-text">${society[i].name}</p>
+                    <p class="card-text fs-4">${society[i].name}</p>
+                    <p class="card-text">${society[i].position}</p>
                 </div>
             </div>
         </div>
